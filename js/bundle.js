@@ -11,7 +11,8 @@ let w = array_w;  // This argument indicates the weights of each criteria.
 let ia = array_ia; // This argument indicates if a criterion is beneficial or not.
 
 
-console.log(topsis.getBest(m, w, ia));
+new Topsis('body', topsis, Matrix, m, w, ia);
+// console.log(topsis.getBest(m, w, ia));
 },{"linear-algebra":4,"topsis":5}],2:[function(require,module,exports){
 (function (root, factory) {
   "use strict";

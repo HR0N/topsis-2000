@@ -1,0 +1,32 @@
+
+
+header nav {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.79);
+    padding: 12px 2%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    list-style: none;
+}
+
+header nav ul li {
+}
+
+header nav ul li a {
+    margin: 0 10px;
+    color: dimgray;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .2s;
+    padding: 3px 6px;
+    border-radius: .2rem;
+}
+
+header nav ul li a:hover {
+    background-color: #ae3374;
+    color: wheat;
+}

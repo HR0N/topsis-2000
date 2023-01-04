@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../node_modules/h-bootstrap/h-boobstrap.css">
+    <link rel="stylesheet" href="../css/settings.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/topsis.css">
+    <title>Topsis</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="/">Главная</a></li>
+            <li><a href="https://portfolio.kievservice.space/">Портфолио</a></li>
+            <li><a href="https://coal.evilcode.space/">Сайт Landing</a></li>
+            <li><a href="https://oshwga.evilcode.space/">Простой 1</a></li>
+            <li><a href="https://www.l2lb.monster/other/extra/attribute">Игровой функциональный</a></li>
+            <li><a href="pages/topsis.html">TOPSIS</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="interface-wrapper">
+    <h2 class="interface-wrapper__title">Прототип интерфейса</h2>
+    <div class="products-container">
+        <div class="products">
+
+        </div>
+        <div class="criterion_weight">
+            <label>Білки
+                <input class="form-control" type="number" name="protein" step="0.01" min="0" value="0"></label>
+            <label>Жири
+                <input class="form-control" type="number" name="fats" step="0.01" min="0" value="0"></label>
+            <label>Вуглеводи
+                <input class="form-control" type="number" name="carbohydrates" step="0.01" min="0" value="0"></label>
+            <label>Калорії
+                <input class="form-control" type="number" name="calories" step="0.01" min="0" value="0"></label>
+            <label>Ціна \ 100 грам
+                <input class="form-control" type="number" name="price_weight" step="0.01" min="0" value="0"></label>
+        </div>
+        <div class="buttons">
+            <div class="btn btn-warning">Посчитать</div>
+        </div>
+    </div>
+    <div class="result">
+        <h2 class="result-title">Вывод расчетов</h2>
+        <div class="output">
+            <div class="output-title"></div>
+            <div class="output-data">
+                Продукт №2
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../libs/jquery.js"></script>
+<script src="../js/product.js"></script>
+<script src="../js/topsis.js"></script>
+<script>
+    // m argument is the alternative matrix. Each row is an alternative and each column is a criterion.
+    // Аргумент m — альтернативная матрица. Каждая строка является альтернативой, а каждый столбец является критерием.
+    let arrayMatrix =
+        [[2, 5, 5],
+        [60, 26, 4],
+        [20, 20, 4],
+        [500, 2, 4],
+        [50, 23, 3],
+        [25, 10, 1]];
+
+    // This argument indicates the weights of each criteria.
+    // Этот аргумент указывает веса каждого критерия.
+    let array_w = [0.27, 0.33, 0.40];
+
+    // This argument indicates if a criterion is beneficial or not.
+    // Этот аргумент указывает, выгоден критерий или нет.
+    let array_ia = ['max', 'max', 'max'];
+
+    /*  browserify main.js -o bundle.js */
+</script>
+
+<script src="../js/bundle.js"></script>
+</html>
