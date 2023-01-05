@@ -14,19 +14,61 @@
 <div class="interface-wrapper">
     <div class="products-container">
         <div class="products">
-
+            <div class="interface-wrapper__title">
+                <h1>TOPSIS</h1>
+                <p class="interface-wrapper__title2">Уважно введіть дані з упакування товару та ціну у таблицю</p>
+            </div>
         </div>
+        <div class="criterion_weight__title">
+            Вкажіть наскільки для вас важливий данний показник.
+            <em><br><0.1 - неважливо</em>
+            <em><br>0.2 - мало важливо</em>
+            <em><br>0.3 - помірно важливо</em>
+            <em><br>0.4 - важливо</em>
+        </div>
+
         <div class="criterion_weight">
             <label>Білки
-                <input class="form-control" type="number" name="protein" step="0.01" min="0" value="0.00"></label>
+                <input class="form-control number" type="number" name="protein" step="0.01" min="0" value="0.00">
+                <div class="minmax">
+                    <label><input class="checkbox" type="checkbox" name="protein_check" checked><span class="title"><span class="min">min</span>
+                        <span class="button"><span class="indicate"></span></span><span class="max">max</span></span>
+                    </label>
+                </div>
+            </label>
+
             <label>Жири
-                <input class="form-control" type="number" name="fats" step="0.01" min="0" value="0.00"></label>
+                <input class="form-control number" type="number" name="fats" step="0.01" min="0" value="0.00">
+                <div class="minmax">
+                    <label><input class="checkbox" type="checkbox" name="fats_check" checked><span class="title"><span class="min">min</span>
+                        <span class="button"><span class="indicate"></span></span><span class="max">max</span></span>
+                    </label>
+                </div>
+            </label>
             <label>Вуглеводи
-                <input class="form-control" type="number" name="carbohydrates" step="0.01" min="0" value="0.00"></label>
+                <input class="form-control number" type="number" name="carbohydrates" step="0.01" min="0" value="0.00">
+                <div class="minmax">
+                    <label><input class="checkbox" type="checkbox" name="carbohydrates_check" checked><span class="title"><span class="min">min</span>
+                        <span class="button"><span class="indicate"></span></span><span class="max">max</span></span>
+                    </label>
+                </div>
+            </label>
             <label>Калорії
-                <input class="form-control" type="number" name="calories" step="0.01" min="0" value="0.00"></label>
+                <input class="form-control number" type="number" name="calories" step="0.01" min="0" value="0.00">
+                <div class="minmax">
+                    <label><input class="checkbox" type="checkbox" name="calories_check" checked><span class="title"><span class="min">min</span>
+                        <span class="button"><span class="indicate"></span></span><span class="max">max</span></span>
+                    </label>
+                </div>
+            </label>
             <label>Ціна \ 100 грам
-                <input class="form-control" type="number" name="price_weight" step="0.01" min="0" value="0.00"></label>
+                <input class="form-control number" type="number" name="price_weight" step="0.01" min="0" value="0.00">
+                <div class="minmax">
+                    <label><input class="checkbox" type="checkbox" name="price_weight_check"><span class="title"><span class="min">min</span>
+                        <span class="button"><span class="indicate"></span></span><span class="max">max</span></span>
+                    </label>
+                </div>
+            </label>
         </div>
         <div class="buttons">
             <div class="btn btn-warning count">Порахувати</div>

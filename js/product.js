@@ -35,12 +35,12 @@ class Product {
             <input class="form-control" type="number" min="0" name="weight">
         </label>
         <label>Ціна \\ 100 грам
-            <input class="form-control" type="number" name="price_weight" disabled>
+            <input class="form-control" type="number" min="0" name="price_weight">
         </label>
     </div>`;
         this.prod_blank = `<div class="prod-blank">
                 <div class="prod-blank__buttons">
-                    <div class="btn btn-outline-success">Добавить</div>
+                    <div class="btn btn-outline-success">Додати</div>
                 </div>
             </div>`;
     }
